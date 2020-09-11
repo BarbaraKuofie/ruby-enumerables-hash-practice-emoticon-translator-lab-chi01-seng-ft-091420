@@ -23,7 +23,8 @@ def get_english_meaning (hash, emoticon)
 
 def get_japanese_emoticon(hash, emoticon)
   load_library(hash) do |key, value|
- if value[:english] == emoticon
-    return value[:japanese]
-  end
+    if value[:english] == emoticon
+      return value[:japanese]
+    end
+  end 
 end 
